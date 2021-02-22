@@ -20,7 +20,12 @@ public class Primes {
         k = 2;
 
         while (prime && (k < n)) {
-
+            
+            /*
+             * If any number, other than 1 or n itself, is divisble by n
+             * n is not a prime number thus prime is set to false.
+             */
+            
             if (n % k == 0) {
                 prime = false;
             }
